@@ -6,6 +6,9 @@ spring:
     port: 5672
     username: admin
     password: admin
+  sleuth:
+    sampler:
+      probability: 0.1
 
 #server:
 #  port: 8001
@@ -28,7 +31,6 @@ management:
     web:
       exposure:
         include: hystrix.stream
-
 
 ---
 spring:
